@@ -1,14 +1,13 @@
 # Separar y validar los caracteres de una cadena de texto
-import re
 
 def separador_de_caracteres(cadena):
     return[caracter for caracter in cadena]
 
 def validar_caracteres(cadena):
-    caracteres_validos = re.compile(
-        r"^[ a-zñA-ZÑáéíóúüÁÉÍÓÚ0-9.,;:!*\-¿?@#\$%\^&=+\-\'\"()\t]+$"
-    )
-    return bool(caracteres_validos.match(cadena))
+    caracteres_extra = " .,;:!*-¿?@#$%^&=+-'/\"()\\t"
+    
+    for caracter in cadena:
+        return bool(caracter.isalnum() or caracter in caracteres_extra)
 
 cadena_escrita = input("Escriba una cadena de texto: ")
 
