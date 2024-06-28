@@ -5,10 +5,10 @@ def separador_de_caracteres(cadena):
     return[caracter for caracter in cadena]
 
 def validar_caracteres(cadena):
-    caracteres_validos = re.compile(r"^[ a-zñA-ZÑáéíóúüÁÉÍÓÚ0-9.,;:!*-¿?\'\"()\t]+$")
-    if caracteres_validos.match(cadena):
-        return True
-    return False
+    caracteres_validos = re.compile(
+        r"^[ a-zñA-ZÑáéíóúüÁÉÍÓÚ0-9.,;:!*\-¿?@#\$%\^&=+\-\'\"()\t]+$"
+    )
+    return bool(caracteres_validos.match(cadena))
 
 cadena_escrita = input("Escriba una cadena de texto: ")
 
