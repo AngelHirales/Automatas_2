@@ -1,5 +1,6 @@
 # Automatas_2
-Repositorio de la materia Automatas 2
+## Repositorio de la materia Automatas 2
+## Angel Gabriel Hirales Guzman
 
 Este proyecto es un analizador lexico del leguaje español
 
