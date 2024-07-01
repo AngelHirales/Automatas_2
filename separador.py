@@ -24,14 +24,14 @@ def validar_caracteres(cadena):
             caracteres_no_validos.append(caracter)
     
     if caracteres_no_validos:
-        print(f"Se encontraron caracteres no válidos: {caracteres_no_validos}")
+        print(f"\n❗Error❗\n Se encontraron caracteres no válidos: {caracteres_no_validos}")
         return False
     return True
 
 # Pedir al usuario una cadena de texto
-cadena_escrita = input("Escriba una cadena de texto: ")
+cadena_escrita = input("\nEscriba una cadena de texto: ")
 
 # Mostrar los caracteres si la cadena es valida
 if validar_caracteres(cadena_escrita):
     caracteres_separados = separador_de_caracteres(cadena_escrita)
-    print("La cadena escrita es la siguiente: ", caracteres_separados)
+    print("\n✅Cadena valida✅\n La cadena escrita es la siguiente: ", caracteres_separados)
