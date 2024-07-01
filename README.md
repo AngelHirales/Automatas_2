@@ -2,7 +2,7 @@
 ## Repositorio de la materia Automatas 2
 ### - Angel Gabriel Hirales Guzman
 
-Este proyecto es un analizador lexico del leguaje español
+Este proyecto es un analizador lexico del lenguaje español
 
 Para este proyecto se utilizo:
 - Python version 3.12.2
