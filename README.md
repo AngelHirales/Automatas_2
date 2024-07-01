@@ -1,5 +1,5 @@
 # Repositorio de la materia Automatas 2
-## Nombre: Angel Gabriel Hirales Guzman
+### Nombre: Angel Gabriel Hirales Guzman
 
 Este proyecto es un analizador lexico del lenguaje español
 
