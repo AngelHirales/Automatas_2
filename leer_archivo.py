@@ -27,20 +27,20 @@ def validar_caracteres(cadena):
         return False
     return True
 
-# Nombre del archivo a leer
-nombre_archivo = 'folder/recursos.txt'
+# Ruta del archivo a leer
+ruta_archivo = 'folder/recursos.txt'
 
-def leer_archivo_y_separar_palabras(nombre_archivo):
+def leer_archivo_y_separar_palabras(ruta_archivo):
     try:
-        with open(nombre_archivo, 'r', encoding='utf-8') as archivo:
+        with open(ruta_archivo, 'r', encoding='utf-8') as archivo:
             contenido = archivo.read()
         return contenido
     except FileNotFoundError:
-        print(f"\n❗Error❗\n El archivo en: {nombre_archivo} no existe o la ruta no es correcta")
+        print(f"\n❗Error❗\n El archivo en: {ruta_archivo} no existe o la ruta no es correcta")
         return None
 
 # Leer el contenido del archivo
-contenido_archivo = leer_archivo_y_separar_palabras(nombre_archivo)
+contenido_archivo = leer_archivo_y_separar_palabras(ruta_archivo)
 
 # Validar y separar las palabras si el archivo se leyó correctamente
 if contenido_archivo and validar_caracteres(contenido_archivo):
