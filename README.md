@@ -13,7 +13,7 @@ Este proyecto es un analizador lexico del lenguaje español
 - Para una cadena de texto valida use solo letras, signos de puntuacion, espacios y numeros.
 - En caso de escribir una cadena de texto no valida, se mostrara un mensaje de error con los carcateres no validos.
 
-## para el archivo leer archivo.py:
+## para el archivo leer_archivo.py:
 - En ruta_archivo, coloque la ruta del archivo.txt que desea analizar
 - Ejecute el comando: Python leer_archivo.py (desde la ruta donde se encuentre el archivo del codigo)
 - Para una cadena de texto valida use solo letras, signos de puntuacion, espacios y numeros.
