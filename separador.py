@@ -2,7 +2,7 @@
 
 def separador_de_caracteres(cadena):
     # Separar los caracteres
-    return[caracter for caracter in cadena]
+    return cadena.split()
 
 def validar_caracteres(cadena):
 
@@ -33,5 +33,5 @@ cadena_escrita = input("\nEscriba una cadena de texto: ")
 
 # Mostrar los caracteres si la cadena es valida
 if validar_caracteres(cadena_escrita):
-    caracteres_separados = separador_de_caracteres(cadena_escrita)
-    print("\n✅Cadena valida✅\n La cadena escrita es la siguiente: ", caracteres_separados)
+    cracteres_separados = separador_de_caracteres(cadena_escrita)
+    print("\n✅Cadena valida✅\n La cadena escrita es la siguiente: ", cracteres_separados)
