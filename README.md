@@ -8,8 +8,8 @@ Este proyecto es un analizador lexico del lenguaje español
 - El editor Visual Studio Code
 
 ## Instrucciones de ejecucion y uso:
-- El archivo principal es separador.py
-- Ejecute el comando: python separador.py (desde la ruta donde se encuentre el archivo del codigo)
+- El archivo principal es main.py
+- Ejecute el comando: python main.py (desde la ruta donde se encuentre el archivo del codigo)
 - Para una cadena de texto valida use solo letras, signos de puntuacion, espacios y numeros.
 - Al ingresar una cadena buscara las palabras ingresadas en folder/db.txt
 - Si encuentra las palabras las mostrara, si no tambien mostrara un mensaje de que no se encontro 
