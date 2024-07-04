@@ -11,4 +11,6 @@ Este proyecto es un analizador lexico del lenguaje español
 - El archivo principal es separador.py
 - Ejecute el comando: python separador.py (desde la ruta donde se encuentre el archivo del codigo)
 - Para una cadena de texto valida use solo letras, signos de puntuacion, espacios y numeros.
+- Al ingresar una cadena buscara las palabras ingresadas en folder/db.txt
+- Si encuentra las palabras las mostrara, si no tambien mostrara un mensaje de que no se encontro 
 - En caso de escribir una cadena de texto no valida, se mostrara un mensaje de error con los carcateres no validos.
