@@ -1,0 +1,5 @@
+Sustantivos - token 101: Casa, Perro, Niño, Libro, Escuela, Mesa, Ciudad, Hombre, Flor, Mar
+Adjetivos - token 102: Bueno, Malo, Bonito, Feo, Grande, Pequeño, Alto, Bajo, Rapido, Lento
+Adverbios - token 103: Rapidamente, Lentamente, Bien, Mal, Aqui, Alli, Ayer, Hoy, Siempre, Nunca
+Pronombres - token 104: Yo, Tu, El, Ella, Nosotros, Vosotros, Ellos, Me, Te
+Verbos - token 105: Ser, Estar, Tener, Hacer, Poder, Decir, Ir, Ver, Dar, Saber
