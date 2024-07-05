@@ -9,7 +9,7 @@ def separador_de_caracteres(cadena):
 
 # Leer el contenido de un archivo .txt
 def leer_archivo(archivo):
-    with open(archivo, 'r', encoding='utf-8') as file:
+    with open(archivo, 'r') as file:
         return file.read()
 
 # Especificar el archivo de entrada
