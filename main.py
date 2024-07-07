@@ -9,7 +9,7 @@ def separador_de_caracteres(cadena):
 
 # Leer el contenido de un archivo .txt
 def leer_archivo(archivo):
-    with open(archivo, 'r') as file:
+    with open(archivo, 'r', encoding='utf-8') as file:
         return file.read()
 
 # Especificar el archivo de entrada
@@ -26,5 +26,3 @@ if validar_caracteres(cadena_escrita):
     # Verificar cada palabra en el archivo
     for palabra in palabras_separadas:
         load_sustantivo(palabra)
-else:
-    print("\n❌ La cadena ingresada contiene caracteres no válidos. ❌")
