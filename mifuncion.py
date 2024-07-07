@@ -32,7 +32,8 @@ def load_sustantivo(palabra):
                 token, palabras = data
                 for db_string in palabras.split(','):
                     if palabra.lower() == db_string.strip().lower():
-                        print(f"\n✅ Encontré '{palabra}' con el token: {token} \nEntre las palabras: {palabras}")
+                        print(f"\n✅ Encontré '{palabra}' su token es -> {token}")
                         return token
-    print(f"\n❌ No se encontró la palabra: '{palabra}'")
+    token = 666
+    print(f"\n❌ No encontré la palabra: '{palabra}' se asigno el token: '{token}' para palabras no encontradas")
     return None
