@@ -10,7 +10,6 @@ Este proyecto es un analizador lexico del lenguaje español
 ## Instrucciones de ejecucion y uso:
 - El archivo principal es main.py
 - Ejecute el comando: python main.py (desde la ruta donde se encuentre el archivo del codigo)
-- Para una cadena de texto valida use solo letras, signos de puntuacion, espacios y numeros.
 - En el archivo cadena.txt escriba una cadena de texto
 - Al ingresar una cadena buscara las palabras ingresadas en folder/db.txt
 - Si encuentra las palabras las mostrara, si no tambien mostrara un mensaje de que no se encontro 
