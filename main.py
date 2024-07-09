@@ -18,6 +18,9 @@ archivo_de_entrada = 'cadena.txt'
 # Leer la cadena desde el archivo
 cadena_escrita = leer_archivo(archivo_de_entrada)
 
+# Lista para almacenar los tokens
+lista_tokens = []
+
 # Mostrar los caracteres si la cadena es válida
 if validar_caracteres(cadena_escrita):
     palabras_separadas = separador_de_caracteres(cadena_escrita)
@@ -25,4 +28,9 @@ if validar_caracteres(cadena_escrita):
     
     # Verificar cada palabra en el archivo
     for palabra in palabras_separadas:
-        load_sustantivo(palabra)
+        load_sustantivo(palabra, lista_tokens)
+else:
+    print("\n❌ La cadena ingresada contiene caracteres no válidos. ❌")
+
+# Imprimir la lista de tokens
+print(f"\nLista de tokens: {lista_tokens}")
