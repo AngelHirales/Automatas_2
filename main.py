@@ -1,7 +1,5 @@
-# Separar y validar los caracteres de una cadena de texto
-
 # importar las funciones de mifuncion.py
-from mifuncion import validar_caracteres, load_sustantivo
+from mifuncion import validar_caracteres, load_sustantivo, archivo_tokens
 
 def separador_de_caracteres(cadena):
     # Separar por palabras
@@ -12,13 +10,11 @@ def leer_archivo(archivo):
     with open(archivo, 'r', encoding='utf-8') as file:
         return file.read()
 
-# Especificar el archivo de entrada
 archivo_de_entrada = 'cadena.txt'
 
 # Leer la cadena desde el archivo
 cadena_escrita = leer_archivo(archivo_de_entrada)
 
-# Lista para almacenar los tokens
 lista_tokens = []
 
 # Mostrar los caracteres si la cadena es válida
@@ -33,4 +29,10 @@ else:
     print("\n❌ La cadena ingresada contiene caracteres no válidos. ❌")
 
 # Imprimir la lista de tokens
-print(f"\nLista de tokens: {lista_tokens}")
+#print(f"\nLista de tokens: {lista_tokens}")
+
+# Especificar el archivo de salida para los tokens
+salida_tokens = 'tokens.txt'
+
+# Escribir los tokens en el archivo
+archivo_tokens(lista_tokens, salida_tokens)
