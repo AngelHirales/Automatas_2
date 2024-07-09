@@ -1,6 +1,5 @@
 # Función para validar caracteres con una gramática
 def validar_caracteres(cadena):
-
     caracteres_validos = [
         'A', 'Á', 'B', 'C', 'D', 'E', 'É', 'F', 'G', 'H', 'I', 'Í', 'J', 
         'K', 'L', 'M', 'N', 'Ñ', 'O', 'Ó', 'P', 'Q', 'R', 'S', 'T', 'U', 
@@ -28,14 +27,22 @@ def load_sustantivo(palabra, lista_tokens):
     with open('folder/db.txt', 'r', encoding='utf-8') as fid:
         for line in fid:
             data = line.strip().split(':')
-            if len(data) == 2:
-                token, palabras = data
-                for db_string in palabras.split(','):
-                    if palabra.lower() == db_string.strip().lower():
-                        print(f"\n✅ Encontré '{palabra}' su token es -> {token}")
-                        lista_tokens.append(token)
-                        return token
+            token = data[0]
+            palabras = data[1]
+            for db_string in palabras.split(','):
+                if palabra.lower() == db_string.strip().lower():
+                    print(f"\n✅ Encontré '{palabra}' su token es -> {token}")
+                    lista_tokens.append(token)
+                    fid.close()
+                    return token
     token = 666
-    print(f"\n❌ No encontré la palabra: '{palabra}' se asigno el token: '{token}' para palabras no encontradas")
-    lista_tokens.append(str(token))
+    print(f"\n❌ A la palabra: '{palabra}' se asigno el token: '{token}' para palabras no encontradas")
+    # agregar cada token a la lista
+    lista_tokens.append(token)
     return token
+
+# Escribir los tokens en un archivo
+def archivo_tokens(lista_tokens, salida_tokens):
+    with open(salida_tokens, 'w') as file:
+        for token in lista_tokens:
+            file.write(f"{token}, \n")
