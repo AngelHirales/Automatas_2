@@ -1,4 +1,4 @@
-# Funcion para validar caracteres con una gramatica
+# Función para validar caracteres con una gramática
 def validar_caracteres(cadena):
 
     caracteres_validos = [
@@ -24,7 +24,7 @@ def validar_caracteres(cadena):
     return True
 
 # Buscar las palabras ingresadas en el archivo db.txt
-def load_sustantivo(palabra):
+def load_sustantivo(palabra, lista_tokens):
     with open('folder/db.txt', 'r', encoding='utf-8') as fid:
         for line in fid:
             data = line.strip().split(':')
@@ -33,7 +33,9 @@ def load_sustantivo(palabra):
                 for db_string in palabras.split(','):
                     if palabra.lower() == db_string.strip().lower():
                         print(f"\n✅ Encontré '{palabra}' su token es -> {token}")
+                        lista_tokens.append(token)
                         return token
     token = 666
     print(f"\n❌ No encontré la palabra: '{palabra}' se asigno el token: '{token}' para palabras no encontradas")
-    return None
+    lista_tokens.append(str(token))
+    return token
