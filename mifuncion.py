@@ -1,9 +1,7 @@
 # Función para validar caracteres con una gramática
 def validar_caracteres(cadena):
     caracteres_validos = [
-        'A', 'Á', 'B', 'C', 'D', 'E', 'É', 'F', 'G', 'H', 'I', 'Í', 'J', 
-        'K', 'L', 'M', 'N', 'Ñ', 'O', 'Ó', 'P', 'Q', 'R', 'S', 'T', 'U', 
-        'Ú', 'V', 'W', 'X', 'Y', 'Z', 'a', 'á', 'b', 'c', 'd', 'e', 'é',
+        'a', 'á', 'b', 'c', 'd', 'e', 'é',
         'f', 'g', 'h', 'i', 'í', 'j', 'k', 'l', 'm', 'n', 'ñ', 'o', 'ó',
         'p', 'q', 'r', 's', 't', 'u', 'ú', 'v', 'w', 'x', 'y', 'z', ' ',
         '.', ',', ';', ':', '¿', '?', '!', '-', '(', ')', '\"', '\'', '0',
@@ -26,14 +24,15 @@ def validar_caracteres(cadena):
 def load_sustantivo(palabra, lista_tokens):
     with open('folder/db.txt', 'r', encoding='utf-8') as fid:
         for line in fid:
+            # hacer un split a partir de :
             data = line.strip().split(':')
             token = data[0]
             palabras = data[1]
+            # hacer un split a partir de una ,
             for db_string in palabras.split(','):
-                if palabra.lower() == db_string.strip().lower():
+                if palabra == db_string.strip().lower():
                     print(f"\n✅ Encontré '{palabra}' su token es -> {token}")
                     lista_tokens.append(token)
-                    fid.close()
                     return token
     token = 666
     print(f"\n❌ A la palabra: '{palabra}' se asigno el token: '{token}' para palabras no encontradas")
@@ -43,6 +42,6 @@ def load_sustantivo(palabra, lista_tokens):
 
 # Escribir los tokens en un archivo
 def archivo_tokens(lista_tokens, salida_tokens):
-    with open(salida_tokens, 'w') as file:
+    with open(salida_tokens, 'w', encoding='utf-8') as file:
         for token in lista_tokens:
-            file.write(f"{token}, \n")
+            file.write(f"{token},\n")
