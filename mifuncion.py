@@ -1,11 +1,11 @@
 # Función para validar caracteres con una gramática
 def validar_caracteres(cadena):
     caracteres_validos = [
-        'a', 'á', 'b', 'c', 'd', 'e', 'é',
-        'f', 'g', 'h', 'i', 'í', 'j', 'k', 'l', 'm', 'n', 'ñ', 'o', 'ó',
-        'p', 'q', 'r', 's', 't', 'u', 'ú', 'v', 'w', 'x', 'y', 'z', ' ',
-        '.', ',', ';', ':', '¿', '?', '!', '-', '(', ')', '\"', '\'', '0',
-        '1', '2', '3', '4', '5', '6', '7', '8', '9', '\n', '\t'
+        'a', 'á', 'b', 'c', 'd', 'e', 'é', 'f', 'g', 'h', 'i', 'í', 'j', 
+        'k', 'l', 'm', 'n', 'ñ', 'o', 'ó', 'p', 'q', 'r', 's', 't', 'u', 
+        'ú', 'v', 'w', 'x', 'y', 'z', ' ', '.', ',', ';', ':', '¿', '?', 
+        '!', '-', '(', ')', '\"', '\'', '0', '1', '2', '3', '4', '5', 
+        '6', '7', '8', '9', '\n', '\t'
     ]
 
     caracteres_no_validos = []
@@ -22,13 +22,26 @@ def validar_caracteres(cadena):
 
 # Buscar las palabras ingresadas en el archivo db.txt
 def load_sustantivo(palabra, lista_tokens):
+    # Definir los caracteres especiales y su token
+    signos = ".,;:'\"()-"
+    if palabra in signos:
+        token = 200
+        print(f"\n✅ Encontré '{palabra}' su token es -> {token}")
+        lista_tokens.append(token)
+        return token
+    
+    # Verificar si la palabra es un número
+    if palabra.isdigit():
+        token = 201
+        print(f"\n✅ Encontré '{palabra}' su token es -> {token}")
+        lista_tokens.append(token)
+        return token
+    
     with open('folder/db.txt', 'r', encoding='utf-8') as fid:
         for line in fid:
-            # hacer un split a partir de :
             data = line.strip().split(':')
             token = data[0]
             palabras = data[1]
-            # hacer un split a partir de una ,
             for db_string in palabras.split(','):
                 if palabra == db_string.strip().lower():
                     print(f"\n✅ Encontré '{palabra}' su token es -> {token}")
