@@ -1,8 +1,34 @@
-101: casa, perro, niño, libro, escuela, mesa, ciudad, hombre, flor, mar
-102: bueno, malo, bonito, feo, grande, pequeño, alto, bajo, rapido, lento
-103: rapidamente, lentamente, bien, mal, aqui, alli, ayer, hoy, siempre, nunca
-104: yo, tu, el, ella, nosotros, ellos, me, te, la, su, se
-105: ser, estar, tener, hacer, poder, decir, ir, ver, dar, saber, es
-106: azul, rojo, verde, amarillo, naranja, gris, negro, blanco
-107: juan, pedro, martin, eduardo, rafael, mario, luis
-108: de, en
+101:"ser", "estar", "tener", "hacer", "poder", "decir", "ir", "ver", "dar", "saber",
+    "he", "has", "ha", "hemos", "han", "haya", "hayas", "hayamos", "hayan", 
+    "habré", "habrás", "habrá", "habremos", "habrán", "habría", "habrías", 
+    "habríamos", "habrían", "había", "habías", "habíamos", "habían", "hube", 
+    "hubiste", "hubo", "hubimos", "hubieron", "hubiera", "hubieras", 
+    "hubiéramos", "hubieran", "hubiese", "hubieses", "hubiésemos", 
+    "hubiesen", "habiendo", "habido", "soy", "eres", "es", "somos", "son", 
+    "sea", "seas", "seamos", "sean", "seré", "serás", "será", "seremos", 
+    "serán", "sería", "serías", "seríamos", "serían", "era", "eras", 
+    "éramos", "eran", "fui", "fuiste", "fue", "fuimos", "fueron", 
+    "fuera", "fueras", "fuéramos", "fueran", "fuese", "fueses", 
+    "fuésemos", "fuesen", "sintiendo", "sentido", "tenido", "tenida", 
+    "tenidos", "tenidas", "teniendo", "tengo", "tienes", "tiene", 
+    "tenemos", "tienen", "tenga", "tengas", "tengamos", 
+    "tengan", "tendré", "tendrás", "tendrá", "tendremos", "tendrán", 
+    "tendría", "tendrías", "tendríamos", "tendrían", "tenía", "tenías", 
+    "teníamos", "tenían", "tuve", "tuviste", "tuvo", "tuvimos", 
+    "tuvieron", "tuviera", "tuvieras", "tuviéramos", "tuvieran", "tuviese",
+    "tuvieses", "tuviésemos", "tuviesen", "tengo", "tienes", "tiene", "tenemos",
+    "tienen", "tenga", "tengas", "tengamos", "tengan", "estaré", "estarás", "estará", 
+    "estaremos", "estarán", "estarías", "estaríamos", "estarían", 
+    "estaba", "estabas", "estábamos", "estaban", "estuve", "estuviste", 
+    "estuvo", "estuvimos", "estuvieron", "estuviera", "estuvieras", 
+    "estuviéramos", "estuvieran", "estuviese", "estuvieses", 
+    "estuviésemos", "estuviesen", "estando", "estado"
+102: "bueno", "malo", "bonito", "feo", "grande", "pequeño", "alto", "bajo",
+     "rápido", "lento", 
+103: "azul", "rojo", "verde", "amarillo", "naranja", 
+     "gris", "negro", "blanco"
+104: "rápidamente", "lentamente", "bien", "mal", "aquí", "allí", "ayer", "hoy", "siempre", "nunca"
+105: "casa", "perro", "niño", "libro", "escuela", "mesa", "ciudad", "hombre", "flor", "mar"
+106: "juan", "pedro", "martín", "eduardo", "rafael", "mario", "luis"
+107: "yo", "tú", "él", "ella", "nosotros", "ellos", "me", "te", "la", "su", "se"
+108: "de", "en"
