@@ -23,7 +23,6 @@ lista_tokens = []
 # Mostrar los caracteres si la cadena es válida
 if validar_caracteres(cadena):
     palabras_separadas = separador_de_caracteres(cadena)
-    #print("\n✅ Cadena válida ✅\n La cadena escrita es la siguiente: ", palabras_separadas)
     
     # Verificar cada palabra en el archivo
     for palabra in palabras_separadas:
